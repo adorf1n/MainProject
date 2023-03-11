@@ -1,0 +1,140 @@
+.logo {
+  background-image: url('./img/logo.png');
+  width: 8.5rem;
+  height: 7.75rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  gap: 101px;
+  margin-top: 20px;
+}
+
+.inputInfo {
+  &_container {
+    width: 89.375rem;
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    border-bottom: solid 1px #ededf2;
+    padding-bottom: 20px;
+    justify-content: space-between;
+  }
+}
+
+.infoSocial {
+  &_container {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+.info {
+  &_container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  &_smallfont {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #828299;
+  }
+  &_bigfont {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 130%;
+    color: #192040;
+  }
+}
+.social {
+  &_btn {
+    &_container {
+      width: 120px;
+      height: 52px;
+      display: flex;
+      gap: 10px;
+    }
+    &_1 {
+      padding: 22px 25px 22px;
+      border: 1px solid #ededf2;
+      border-radius: 1000px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('./img/insta.svg');
+      background-color: transparent;
+    }
+    &_2 {
+      padding: 22px 25px 22px;
+      border: 1px solid #ededf2;
+      border-radius: 1000px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('./img/vk.svg');
+      background-color: transparent;
+    }
+  }
+}
+.input {
+  &_container {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 45rem;
+    border: solid 1px #ededf2;
+    border-radius: 1000px;
+  }
+  &_font {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #828299;
+  }
+  &_icon {
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+}
+
+.navbar {
+  &_container {
+    display: flex;
+    gap: 70px;
+    margin-top: 20px;
+  }
+  &_catalog {
+    &_btn {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 30px 16px;
+      background-color: #ff2e51;
+      border-radius: 1000px;
+    }
+    &_font {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      color: #ffffff;
+    }
+  }
+  &_font {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #192040;
+    background: none;
+  }
+}
