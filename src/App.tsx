@@ -1,12 +1,12 @@
-
-import './App.css'
+import './App.css';
 import Header from './containers/Header/Header';
 
-
 function App() {
-  return <div>
-    <Header/>
-  </div>
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
 
-export default App
+export default App;
