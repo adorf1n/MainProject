@@ -1,9 +1,13 @@
+import { NavLink } from 'react-router-dom';
+
+import clsx from 'clsx';
+
 import styles from './Navbar.module.scss';
 
 const Navbar = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.logo}></div> {/* логотип */}
+      <NavLink to={'/'} className={styles.logo}></NavLink> {/* логотип */}
       <div className={styles.allContainer}>
         {/*общий контейнер*/}
         <div className={styles.inputInfo_container}>
@@ -69,11 +73,21 @@ const Navbar = () => {
             </svg>
             Каталог товаров
           </button>
-          <button className={styles.navbar_font}>Наши услуги</button>
-          <button className={styles.navbar_font}>О студии</button>
-          <button className={styles.navbar_font}>Портфолио</button>
-          <button className={styles.navbar_font}>Блог</button>
-          <button className={styles.navbar_font}>Контакты</button>
+          <NavLink to={'/'} className={styles.navbar_font}>
+            Наши услуги
+          </NavLink>
+          <NavLink to={'/about'} className={styles.navbar_font}>
+            О студии
+          </NavLink>
+          <NavLink to={'/'} className={styles.navbar_font}>
+            Портфолио
+          </NavLink>
+          <NavLink to={'/'} className={styles.navbar_font}>
+            Блог
+          </NavLink>
+          <NavLink to={'/'} className={styles.navbar_font}>
+            Контакты
+          </NavLink>
         </div>
       </div>
     </div>
