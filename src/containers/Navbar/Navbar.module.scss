@@ -10,11 +10,16 @@
   display: flex;
   gap: 101px;
   margin-top: 20px;
+  max-width: 89.375rem;
+  margin: 0 auto;
+}
+
+.allContainer {
+  flex-grow: 1;
 }
 
 .inputInfo {
   &_container {
-    width: 89.375rem;
     display: flex;
     flex-direction: row;
     gap: 55px;
@@ -88,7 +93,7 @@
     align-items: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 45rem;
+    flex-grow: 1;
     border: solid 1px #ededf2;
     border-radius: 1000px;
   }

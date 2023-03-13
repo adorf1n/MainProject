@@ -6,8 +6,29 @@
 }
 body {
   box-sizing: border-box;
+  font-family: 'Gilroy';
 }
 
 html {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Bold.eot');
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+    url('./assets/fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Gilroy-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Gilroy-Regular.eot');
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+    url('./assets/fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Gilroy-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }

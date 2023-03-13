@@ -1,12 +1,10 @@
-import React from 'react';
-
 import styles from './Navbar.module.scss';
 
 const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logo}></div> {/* логотип */}
-      <div>
+      <div className={styles.allContainer}>
         {/*общий контейнер*/}
         <div className={styles.inputInfo_container}>
           {/* контейнер под input и информацию*/}
