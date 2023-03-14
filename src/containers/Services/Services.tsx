@@ -1,5 +1,3 @@
-import { NavLink } from 'react-router-dom';
-
 import styles from './Services.module.scss';
 
 const Services = () => {
@@ -24,7 +22,7 @@ const Services = () => {
               покрытия.
             </p>
             <button className={styles.btn}>
-              Узнать подробнее{' '}
+              Узнать подробнее
               <svg
                 width="7"
                 height="12"

@@ -4,9 +4,11 @@ const Slider = () => {
   return (
     <div className={styles.container}>
       <div className={styles.text_container}>
+        <h2 className="todo">добавить слайдер</h2>
         <h1 className={styles.text_bigfont}>
           Художественное оформление вертикальных поверхностей
         </h1>
+
         <h4 className={styles.text_smallfont}>
           Используем различные технологии нанесения изображений. В нашем
           арсенале немецкое оборудование, Итальянские технологии холодного
