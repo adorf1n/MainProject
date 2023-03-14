@@ -1,0 +1,56 @@
+.container {
+  max-width: 89.375rem;
+  display: flex;
+  gap: 130px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  flex-direction: column;
+}
+
+.info {
+  &_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.h1 {
+  &_container {
+    max-width: 28.4375rem;
+  }
+  &_font {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    color: #192040;
+  }
+}
+
+.h5 {
+  &_container {
+    max-width: 51.5625rem;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  &_font {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #192040;
+    align-self: stretch;
+  }
+  &_details {
+    &_summary {
+      margin-bottom: 8px;
+      &_font {
+        font-weight: bold;
+      }
+    }
+  }
+}

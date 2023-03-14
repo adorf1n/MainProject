@@ -1,12 +1,13 @@
-import React from 'react';
-
-import Header from './../../containers/Header/Header';
+import Services from '../../containers/Services/Services';
+import Info from './../../containers/Info/Info';
 import Slider from './../../containers/Slider/Slider';
 
 const Main = () => {
   return (
     <div>
       <Slider />
+      <Info />
+      <Services />
     </div>
   );
 };

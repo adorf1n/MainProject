@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import clsx from 'clsx';
+import cn from 'clsx';
 
 import styles from './Navbar.module.scss';
 
@@ -74,7 +74,7 @@ const Navbar = () => {
             Каталог товаров
           </button>
           <NavLink to={'/'} className={styles.navbar_font}>
-            Наши услуги
+            <p>Наши услуги</p>
           </NavLink>
           <NavLink to={'/about'} className={styles.navbar_font}>
             О студии
