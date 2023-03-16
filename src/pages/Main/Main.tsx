@@ -1,10 +1,10 @@
-import Goods from '../../containers/Goods/Goods';
-import Services from '../../containers/Services/Services';
-import Blog from './../../containers/Blog/Blog';
-import Info from './../../containers/Info/Info';
-import Offer from './../../containers/Offer/Offer';
-import Slider from './../../containers/Slider/Slider';
-import Usage from './../../containers/Usage/Usage';
+import Blog from './Blog/Blog';
+import Goods from './Goods/Goods';
+import Info from './Info/Info';
+import Offer from './Offer/Offer';
+import Services from './Services/Services';
+import Slider from './Slider/Slider';
+import Usage from './Usage/Usage';
 
 const Main = () => {
   return (

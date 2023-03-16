@@ -9,22 +9,24 @@ const Offer = () => {
           Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время и
           ответит на все интересующие вопросы.
         </h6>
-        <div className={styles.inputText_container}>
-          <div>
-            <p className={styles.p}>Ваше имя:</p>
-            <input
-              className={styles.input_font + ' ' + styles.input_container}
-              type="text"
-              placeholder="Ваше имя"
-            />
-          </div>
-          <div>
-            <p className={styles.p}>Номер телефона:</p>
-            <input
-              className={styles.input_font + ' ' + styles.input_container}
-              type="tel"
-              placeholder="+996 "
-            />
+        <div className={styles.inputText_parentcontainer}>
+          <div className={styles.inputText_container}>
+            <div className={styles.input_flexgrow}>
+              <p className={styles.p}>Ваше имя:</p>
+              <input
+                className={styles.input_font + ' ' + styles.input_container}
+                type="text"
+                placeholder="Ваше имя"
+              />
+            </div>
+            <div className={styles.input_flexgrow}>
+              <p className={styles.p}>Номер телефона:</p>
+              <input
+                className={styles.input_font + ' ' + styles.input_container}
+                type="tel"
+                placeholder="+996 "
+              />
+            </div>
           </div>
         </div>
         <div className={styles.send_container}>

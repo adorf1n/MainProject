@@ -32,18 +32,18 @@ const Footer = () => {
           {/*Наши услуги */}
           <h5 className={styles.h5}>Наши услуги</h5>
           <div className={styles.services_btn_container}>
-            <button className={styles.btn_align}>
+            <a href="/" className={styles.services_btn_font}>
               Создание уникального дизайна в квартире, доме, офисе
-            </button>
-            <button className={styles.btn_align}>
+            </a>
+            <a href="/" className={styles.services_btn_font}>
               Оформление офисов и коммерческих помещений в фирменном стиле
-            </button>
-            <button className={styles.btn_align}>
+            </a>
+            <a href="/" className={styles.services_btn_font}>
               Функциональный дизайн. Нанесение указателей, вывесок
-            </button>
-            <button className={styles.btn_align}>
+            </a>
+            <a href="/" className={styles.services_btn_font}>
               Печать фотографий и коллажей
-            </button>
+            </a>
           </div>
         </div>
         <div className={styles.big_btn_container}>
