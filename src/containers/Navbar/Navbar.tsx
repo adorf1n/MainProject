@@ -52,7 +52,7 @@ const Navbar = () => {
             <img src={cross} alt="" />
             Каталог товаров
           </button>
-          <NavLink to={'/'} className={styles.navbar_font}>
+          <NavLink to={'/services'} className={styles.navbar_font}>
             <p>Наши услуги</p>
           </NavLink>
           <NavLink to={'/about'} className={styles.navbar_font}>
