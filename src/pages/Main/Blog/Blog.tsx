@@ -3,7 +3,7 @@ import eye from './img/eye.svg';
 
 const Blog = () => {
   return (
-    <div>
+    <div className={styles.margin_top}>
       <div className={styles.h1_container}>
         <h1 className={styles.h1}>Блог</h1>
       </div>
