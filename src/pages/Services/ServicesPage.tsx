@@ -9,7 +9,7 @@ import img4 from './img/img4.png';
 const ServicesPage = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.headtext_container}>
+      <div className={styles.toptext_container}>
         <h6 className={styles.smtext}>
           <img src={house} alt="" /> / Услуги
         </h6>
