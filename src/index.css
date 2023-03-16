@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+  box-sizing: border-box;
 }
 body {
   box-sizing: border-box;
@@ -36,4 +37,8 @@ html {
     url('./assets/fonts/Gilroy-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+button {
+  background-color: transparent;
 }

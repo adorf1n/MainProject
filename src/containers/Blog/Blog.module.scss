@@ -32,6 +32,26 @@
 
 .block {
   &_img {
+    position: relative;
+    &_sign {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      margin-left: 40px;
+      margin-bottom: 25px;
+      padding: 8px 16px 8px;
+      background-color: #ff2e51;
+      max-width: 185px;
+      max-height: 36px;
+      border-radius: 50px;
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      color: #ffffff;
+    }
     &_1 {
       width: 29.375rem;
       height: 15.625rem;
@@ -49,7 +69,7 @@
     }
   }
 }
-x .h6 {
+.h6 {
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 600;
@@ -67,7 +87,7 @@ x .h6 {
   line-height: 140%;
   color: #828299;
   margin-bottom: 20px;
-  white-space: nowrap;
+
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -77,7 +97,72 @@ x .h6 {
     padding-top: 30px;
     padding-left: 40px;
     padding-right: 40px;
-    max-width: 390px;
-    height: 80px;
   }
+}
+
+.stats {
+  &_container {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &_view {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #828299;
+    &_container {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+  &_date {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: #828299;
+  }
+}
+
+.slider {
+  &_container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+    max-width: 1430px;
+    margin: 0 auto;
+    margin-top: 43px;
+    padding-bottom: 120px;
+    border-bottom: solid 1px gray;
+  }
+}
+.moreinf_btn {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  text-decoration-line: underline;
+  color: #192040;
+  background-color: transparent;
+}
+
+.h1 {
+  &_container {
+    max-width: 1430px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  color: #192040;
 }

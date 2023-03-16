@@ -12,7 +12,6 @@ const Goods = () => {
       <div className={styles.goods_container}>
         {/* общий контейнер для товаров */}
         <div className={styles.goods_childcontainer}>
-          <h4 className="todo">добавить пометки типа `25% скидка, Новинка`</h4>
           <div className={styles.block_img + ' ' + styles.img_1}></div>
           <div className={styles.text_container}>
             <div>
@@ -82,7 +81,6 @@ const Goods = () => {
         </div>
       </div>
       <div className={styles.btn_watchAll_container}>
-        <h2 className="todo">ДОБАВИТЬ СЛАЙДЕР</h2>
         <button className={styles.btn_watchAll}>Смотреть все товары</button>
       </div>
     </div>

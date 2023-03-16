@@ -12,7 +12,6 @@ const Usage = () => {
       </div>
       <div className={styles.gridparent}>
         <div className={styles.div_1}>
-          <h2 className="todo">добавить слайдер и лупу</h2>
           <div className={styles.block_img + ' ' + styles.block_img_1}></div>
           <div className={styles.block_text}>
             <h6 className={styles.h6}>Жилые помещения</h6>

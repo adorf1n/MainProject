@@ -17,7 +17,7 @@ const Info = () => {
             сплочённость команды профессионалов требует определения и уточнения
             поставленных обществом задач.
           </h5>
-          <h2 className="todo">ПОМЕНЯТЬ DROPDOWN</h2>
+
           <details className={styles.h5_details}>
             <summary className={styles.h5_details_summary}>
               Показать больше

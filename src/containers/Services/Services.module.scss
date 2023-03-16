@@ -28,13 +28,13 @@
 .blocks {
   &_container {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     gap: 10px;
   }
 }
 
 .block {
-  gap: 10px;
   max-width: 21.875rem;
 
   background-color: #fbfbf7;
@@ -42,8 +42,8 @@
   border-radius: 30px;
   &_children {
     margin-top: 20px;
-    max-width: 16.875rem;
     padding: 0 40px 30px;
+    flex: 1 0 20%;
   }
 }
 
