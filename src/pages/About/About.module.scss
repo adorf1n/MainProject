@@ -1,0 +1,120 @@
+.container {
+  max-width: 1430px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+  border-bottom: 1px solid #d2d2d9;
+}
+.h6 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #828299;
+}
+
+.toptext_container {
+  max-width: 830px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  margin-bottom: 120px;
+}
+
+.toptext_smtext {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.h1 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 130%;
+  color: #192040;
+}
+
+.h5 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #828299;
+}
+
+.h2 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  color: #192040;
+}
+
+.p {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #192040;
+}
+
+.info {
+  &_container {
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+    margin-bottom: 120px;
+  }
+  &_text {
+    &_container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+.technique {
+  &_container {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+  }
+  &_child1 {
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+  }
+  &_child2 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 130px;
+  }
+}
+
+.activity {
+  &_container {
+    margin-bottom: 135px;
+  }
+  &_toptext {
+    max-width: 590px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &_img {
+    &_container {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+  }
+}
