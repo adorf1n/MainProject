@@ -1,14 +1,16 @@
 .container {
   max-width: 100%;
   max-height: 240px;
+  margin-bottom: 50px;
+  background-color: white;
 }
 .top {
   &_img {
     height: 50px;
     width: 11%;
-    background-image: url("./img/top2.png");
+    background-image: url('./img/top2.png');
   }
-  background-image: url("./img/top.png");
+  background-image: url('./img/top.png');
   &_container {
     display: flex;
     flex-direction: row;
@@ -20,13 +22,14 @@
     margin: 0 auto;
   }
   &_font {
-    font-family: "Gilroy";
+    font-family: 'Gilroy';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 140%;
     color: #ffffff;
     margin-right: 50px;
+    text-decoration: none;
   }
   &_button {
     padding: 8px 20px 8px 20px;
@@ -34,12 +37,13 @@
     border-radius: 1000px;
     background: transparent;
     &_font {
-      font-family: "Gilroy";
+      font-family: 'Gilroy';
       font-style: normal;
       font-weight: 700;
       font-size: 14px;
       line-height: 140%;
       color: #ffffff;
+      text-decoration: none;
     }
   }
 }

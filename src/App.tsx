@@ -1,11 +1,18 @@
+import { Route, Routes } from 'react-router-dom';
+
 import './App.css';
-import Header from './containers/Header/Header';
+import Layout from './components/Layout/Layout';
+import About from './pages/About/About';
+import Main from './pages/Main/Main';
 
 function App() {
   return (
-    <div>
-      <Header />
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Layout>
   );
 }
 
