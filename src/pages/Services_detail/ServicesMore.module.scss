@@ -1,0 +1,132 @@
+.swiper_container {
+  margin: 0 auto;
+
+  background-size: cover;
+  background-image: url('./img/backgroundd.png');
+}
+
+.text {
+  &_container {
+    max-width: 800px;
+    padding-top: 130px;
+    padding-left: 140px;
+    padding-bottom: 133px;
+  }
+  &_bigfont {
+    max-width: 650px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 130%;
+    color: #192040;
+    margin-bottom: 20px;
+  }
+  &_smallfont {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #192040;
+  }
+}
+
+.btn {
+  &_container {
+    margin-top: 50px;
+    background: #ff2e51;
+    border-radius: 50px;
+    padding: 20px 60px 20px;
+  }
+  &_font {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #ffffff;
+  }
+}
+
+.decor_container {
+  max-width: 1430px;
+  margin: 0 auto;
+  margin-top: 122px;
+}
+
+.span {
+  text-decoration: none;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #828299;
+}
+
+.h6 {
+  &_cont {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+.h1 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 130%;
+  color: #192040;
+}
+
+.toptext_container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.h5 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #828299;
+}
+
+.block1 {
+  &_container {
+    margin-top: 133px;
+    display: flex;
+    margin-bottom: 120px;
+
+    gap: 130px;
+  }
+  &_text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &_span {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #192040;
+    text-decoration: none;
+  }
+}
+
+.h2 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  color: #192040;
+}

@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import styles from './ServicesPage.module.scss';
 import arrow from './img/arrow.svg';
 import house from './img/house.svg';
@@ -36,9 +38,9 @@ const ServicesPage = () => {
               граница обучения кадров прекрасно подходит для реализации
               своевременного выполнения сверхзадачи.
             </p>
-            <a className={styles.btn_font} href="/">
+            <NavLink className={styles.btn_font} to="/services/more">
               Узнать подробнее <img src={arrow} alt="" />
-            </a>
+            </NavLink>
           </div>
         </div>
         <div className={styles.div2}>
@@ -56,9 +58,9 @@ const ServicesPage = () => {
               граница обучения кадров прекрасно подходит для реализации
               своевременного выполнения сверхзадачи.
             </p>
-            <a className={styles.btn_font} href="/">
+            <NavLink className={styles.btn_font} to="/services/more">
               Узнать подробнее <img src={arrow} alt="" />
-            </a>
+            </NavLink>
           </div>
         </div>
         <div className={styles.div3}>
@@ -76,9 +78,9 @@ const ServicesPage = () => {
               граница обучения кадров прекрасно подходит для реализации
               своевременного выполнения сверхзадачи.
             </p>
-            <a className={styles.btn_font} href="/">
+            <NavLink className={styles.btn_font} to="/services/more">
               Узнать подробнее <img src={arrow} alt="" />
-            </a>
+            </NavLink>
           </div>
         </div>
         <div className={styles.div4}>
@@ -94,9 +96,9 @@ const ServicesPage = () => {
               граница обучения кадров прекрасно подходит для реализации
               своевременного выполнения сверхзадачи.
             </p>
-            <a className={styles.btn_font} href="/">
+            <NavLink className={styles.btn_font} to="/services/more">
               Узнать подробнее <img src={arrow} alt="" />
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

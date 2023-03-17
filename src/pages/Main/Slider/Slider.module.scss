@@ -1,5 +1,4 @@
 .container {
-  background-image: url('./img/background.png');
   max-width: 1430px;
   margin: 0 auto;
   border-radius: 30px;
@@ -14,6 +13,7 @@
     padding-bottom: 133px;
   }
   &_bigfont {
+    max-width: 650px;
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 600;

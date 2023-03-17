@@ -16,11 +16,10 @@ const Navbar = () => {
           {/* контейнер под input и информацию*/}
           <div className={styles.input_container}>
             {/* контейнер под input */}
-            <img className={styles.input_icon} src={input_icon} alt="" />
             <input
-              className={styles.input_font}
               type="text"
-              placeholder="Поиск..."
+              placeholder="Найти..."
+              className={styles.input}
             />
           </div>
           <div className={styles.infoSocial_container}>
@@ -61,7 +60,7 @@ const Navbar = () => {
           <NavLink to={'/'} className={styles.navbar_font}>
             Портфолио
           </NavLink>
-          <NavLink to={'/'} className={styles.navbar_font}>
+          <NavLink to={'/sliders'} className={styles.navbar_font}>
             Блог
           </NavLink>
           <NavLink to={'/contacts'} className={styles.navbar_font}>

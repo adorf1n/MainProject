@@ -89,26 +89,11 @@
   }
 }
 .input {
-  &_container {
+  flex: 1;
+  padding &_container {
     display: flex;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    flex-grow: 1;
-    border: solid 1px #ededf2;
-    border-radius: 1000px;
-  }
-  &_font {
-    font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 140%;
-    color: #828299;
-  }
-  &_icon {
-    margin-left: 30px;
-    margin-right: 10px;
+    border: solid 1px black;
+    flex: 1;
   }
 }
 
