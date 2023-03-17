@@ -4,10 +4,9 @@
   background-color: #f9fbf6;
   border: 2px solid #ffffff;
   border-radius: 40px;
-  padding-bottom: 35px;
   display: flex;
   flex-direction: row;
-  position: relative;
+  justify-content: space-between;
 }
 
 .h2 {
@@ -121,11 +120,5 @@ span {
 }
 
 .img {
-  width: 43.5rem;
-  height: 29.1875rem;
-  position: absolute;
-  right: 0;
-  margin-right: -107px;
-  background-image: url('./img/1.png');
-  background-repeat: no-repeat;
+  border-radius: 40px;
 }
