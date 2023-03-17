@@ -1,4 +1,5 @@
 import styles from './Offer.module.scss';
+import img from './img/1.png';
 
 const Offer = () => {
   return (
@@ -43,7 +44,7 @@ const Offer = () => {
           </p>
         </div>
       </div>
-      <div className={styles.img}></div>
+      <img src={img} alt="" />
     </div>
   );
 };
