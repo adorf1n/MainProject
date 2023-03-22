@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-pascal-case */
-import { useCallback, useRef } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { Pagination } from 'swiper';
@@ -12,6 +12,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import InfoBlocks from '../Main/InfoBlocks/InfoBlocks';
 import Techniq_cont from './../About/Techniq_cont';
+import BigOffer from './BigOffer/BigOffer';
+import { IQuestionData, QuestionData } from './Questions';
+import Questions from './Questions/Questions';
 import { ServiceSliderData } from './ServiceSliderData';
 import ServiceSliderTemplate from './ServiceSliderTemplate';
 import styles from './ServicesMore.module.scss';
@@ -21,6 +24,7 @@ import next from './img/next.svg';
 import prev from './img/prev.svg';
 
 const ServiceSlider = () => {
+  const [list, setList] = useState<IQuestionData[] | []>([]);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const sliderRef = useRef<any>();
 
@@ -32,6 +36,31 @@ const ServiceSlider = () => {
   const handleNext = useCallback(() => {
     if (!sliderRef.current) return;
     sliderRef.current.swiper.slideNext();
+  }, []);
+
+  useEffect(() => {
+    if (QuestionData.length) {
+      setList(() => {
+        return QuestionData.map((item) => {
+          return {
+            ...item,
+            collapse: false,
+          };
+        });
+      });
+    }
+  }, []);
+
+  const collapseHandler = useCallback((id: number) => {
+    setList((prev) => {
+      return prev.map((item) => {
+        const copy = { ...item };
+        if (copy.id === id) {
+          copy.collapse = !copy.collapse;
+        }
+        return copy;
+      });
+    });
   }, []);
 
   return (
@@ -109,6 +138,59 @@ const ServiceSlider = () => {
         </div>
         <InfoBlocks />
         <Techniq_cont />
+        <div className={styles.points_container}>
+          <div className={styles.points_block}>
+            <h5 className={styles.points_numbering}>01</h5>
+            <h4 className={styles.points_title}>Выезд по Москве и области</h4>
+            <p className={styles.points_text}>
+              Используем различные технологии нанесения изображений. В нашем
+              арсенале немецкое оборудование, Итальянские технологии холодного
+              трансфера и другие бесшовные покрытия.
+            </p>
+          </div>
+          <div className={styles.points_block}>
+            <h5 className={styles.points_numbering}>02</h5>
+            <h4 className={styles.points_title}>Работаем по договору</h4>
+            <p className={styles.points_text}>
+              Используем различные технологии нанесения изображений. В нашем
+              арсенале немецкое оборудование, Итальянские технологии холодного
+              трансфера и другие бесшовные покрытия.
+            </p>
+          </div>
+          <div className={styles.points_block}>
+            <h5 className={styles.points_numbering}>03</h5>
+            <h4 className={styles.points_title}>
+              Поможем с созданием обработкой изображения
+            </h4>
+            <p className={styles.points_text}>
+              Используем различные технологии нанесения изображений. В нашем
+              арсенале немецкое оборудование, Итальянские технологии холодного
+              трансфера и другие бесшовные покрытия.
+            </p>
+          </div>
+          <div className={styles.points_block}>
+            <h5 className={styles.points_numbering}>04</h5>
+            <h4 className={styles.points_title}>Выезд по Москве и области</h4>
+            <p className={styles.points_text}>
+              Используем различные технологии нанесения изображений. В нашем
+              арсенале немецкое оборудование, Итальянские технологии холодного
+              трансфера и другие бесшовные покрытия.
+            </p>
+          </div>
+        </div>
+        <BigOffer />
+        {list.map((item) => {
+          return (
+            <Questions
+              key={item.id}
+              title={item.title}
+              collapse={Boolean(item.collapse)}
+              click={() => collapseHandler(item.id)}
+            >
+              {item.text}
+            </Questions>
+          );
+        })}
       </div>
     </div>
   );

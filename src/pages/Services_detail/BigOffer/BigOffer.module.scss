@@ -1,0 +1,175 @@
+.big_offer {
+  &_container {
+    max-width: 1190px;
+    margin: 0 auto;
+    background-color: #fdfdfa;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    padding: 60px 80px 60px;
+    background-image: url('../img/offerbg.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    margin-top: 120px;
+    display: flex;
+    gap: 80px;
+  }
+}
+.title {
+  &_container {
+    max-width: 585px;
+  }
+  &_h2 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    color: #192040;
+    margin-bottom: 10px;
+  }
+  &_p {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #828299;
+  }
+}
+
+.checkbox {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &_h6 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #192040;
+  }
+}
+
+.inputs {
+  &_container {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.btn {
+  &_approve {
+    background: #ff2e51;
+    border-radius: 50px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #ffffff;
+    padding: 15px 30px 15px;
+  }
+  &_reject {
+    border: 2px solid #ededf2;
+    border-radius: 50px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #828299;
+    padding: 15px 30px 15px;
+  }
+}
+
+.input_font {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #828299;
+  text-decoration: none;
+  margin-left: 11px;
+}
+
+.input_file {
+  visibility: hidden;
+  position: absolute;
+  margin-top: 10px;
+  &_label {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 26px;
+    padding-bottom: 20px;
+    border: 2px solid #ededf2;
+    border-radius: 50px;
+    margin-top: 10px;
+    background-color: #fffefc;
+  }
+
+  &_icon {
+    max-width: 16px;
+    max-height: 16px;
+    margin-top: 3px;
+  }
+}
+
+.h6 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #828299;
+}
+
+.input_text {
+  &_container {
+    display: flex;
+    flex-direction: column;
+  }
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  background-color: #fffefc;
+  border: 2px solid #ededf2;
+  border-radius: 500px;
+  margin-top: 10px;
+  margin-left: -6px;
+}
+
+.input_phone {
+  &_container {
+    display: flex;
+    flex-direction: column;
+  }
+  padding-top: 20px;
+  padding-left: 26px;
+  padding-bottom: 20px;
+  border: 2px solid #ededf2;
+  border-radius: 500px;
+  background-color: #fffefc;
+  margin-left: -6px;
+  margin-top: 10px;
+}
+
+.fullapprove_btn {
+  padding-top: 20px;
+  padding-left: auto;
+  padding-right: auto;
+  padding-bottom: 20px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  background: #ff2e51;
+  border-radius: 50px;
+}

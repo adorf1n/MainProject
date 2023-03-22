@@ -8,9 +8,9 @@ import 'swiper/css/pagination';
 // eslint-disable-next-line import/no-unresolved
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import styles from './ServiceSlider.module.scss';
 import { ServiceSliderData } from './ServiceSliderData';
 import ServiceSliderTemplate from './ServiceSliderTemplate';
+import styles from './ServicesMore.module.scss';
 import next from './img/next.svg';
 import prev from './img/prev.svg';
 

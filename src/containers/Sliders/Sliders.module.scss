@@ -1,12 +1,18 @@
 .swiper_container {
   max-width: 1430px;
   margin: 0 auto;
+  position: relative;
 }
 .img {
   background-color: purple;
 }
 
 .swiperbtn_container {
+  width: 100%;
+  position: absolute;
+
   display: flex;
   justify-content: space-between;
+  margin-top: -200px;
+  z-index: 1000;
 }

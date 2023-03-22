@@ -3,8 +3,6 @@ import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.scss';
 import cross from './img/cross.svg';
 import input_icon from './img/input_icon.svg';
-import insta from './img/insta.svg';
-import vk from './img/vk.svg';
 
 const Navbar = () => {
   return (
@@ -16,6 +14,7 @@ const Navbar = () => {
           {/* контейнер под input и информацию*/}
           <div className={styles.input_container}>
             {/* контейнер под input */}
+            <img className={styles.input_icon} src={input_icon} alt="" />
             <input
               type="text"
               placeholder="Найти..."
