@@ -3,8 +3,6 @@ import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.scss';
 import cross from './img/cross.svg';
 import input_icon from './img/input_icon.svg';
-import insta from './img/insta.svg';
-import vk from './img/vk.svg';
 
 const Navbar = () => {
   return (
@@ -18,9 +16,9 @@ const Navbar = () => {
             {/* контейнер под input */}
             <img className={styles.input_icon} src={input_icon} alt="" />
             <input
-              className={styles.input_font}
               type="text"
-              placeholder="Поиск..."
+              placeholder="Найти..."
+              className={styles.input}
             />
           </div>
           <div className={styles.infoSocial_container}>
@@ -61,7 +59,7 @@ const Navbar = () => {
           <NavLink to={'/'} className={styles.navbar_font}>
             Портфолио
           </NavLink>
-          <NavLink to={'/'} className={styles.navbar_font}>
+          <NavLink to={'/sliders'} className={styles.navbar_font}>
             Блог
           </NavLink>
           <NavLink to={'/contacts'} className={styles.navbar_font}>

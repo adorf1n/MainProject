@@ -1,15 +1,16 @@
+import Sliders from './../../containers/Sliders/Sliders';
 import Blog from './Blog/Blog';
 import Goods from './Goods/Goods';
-import Info from './Info/Info';
+import Info from './Info/Info1block';
+import styles from './Main.module.scss';
 import Offer from './Offer/Offer';
 import Services from './Services/Services';
-import Slider from './Slider/Slider';
 import Usage from './Usage/Usage';
 
 const Main = () => {
   return (
-    <div>
-      <Slider />
+    <div className={styles.container}>
+      <Sliders />
       <Info />
       <Services />
       <Goods />

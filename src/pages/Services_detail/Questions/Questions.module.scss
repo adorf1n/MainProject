@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  border: 2px solid #ededf2;
+  border-radius: 30px;
+  background-color: #fffefc;
+}
+
+.title {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #192040;
+  padding-left: 21px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.content {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #192040;
+}

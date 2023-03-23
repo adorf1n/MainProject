@@ -1,12 +1,9 @@
-import { ISlideData } from './../../../containers/Sliders/slideData';
-import styles from './Slider.module.scss';
+import { ISlideDataa } from './ServiceSliderData';
+import styles from './ServicesMore.module.scss';
 
-const Slider = ({ title, text, image }: ISlideData) => {
+const ServiceSliderTemplate = ({ title, text, image }: ISlideDataa) => {
   return (
-    <div
-      className={styles.container}
-      style={{ backgroundImage: `url(${image})` }}
-    >
+    <div className={styles.container}>
       <div className={styles.text_container}>
         <h1 className={styles.text_bigfont}>{title}</h1>
 
@@ -19,4 +16,4 @@ const Slider = ({ title, text, image }: ISlideData) => {
   );
 };
 
-export default Slider;
+export default ServiceSliderTemplate;
