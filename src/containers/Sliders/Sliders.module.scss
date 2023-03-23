@@ -3,16 +3,31 @@
   margin: 0 auto;
   position: relative;
 }
-.img {
-  background-color: purple;
+.img:hover {
 }
 
 .swiperbtn_container {
-  width: 100%;
+  width: 95%;
+  margin-left: 35px;
   position: absolute;
 
   display: flex;
   justify-content: space-between;
-  margin-top: -200px;
+  margin-top: -337px;
   z-index: 1000;
+}
+
+.swiperbtn_icon {
+  font-size: 60px;
+}
+
+.swiperbtn_icon:hover {
+  background: transparent;
+
+  filter: drop-shadow(0px 0 15px #02fffd);
+  border-radius: 100px;
+}
+
+.swiperbtn {
+  background: transparent;
 }

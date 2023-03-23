@@ -11,7 +11,9 @@ import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import InfoBlocks from '../Main/InfoBlocks/InfoBlocks';
+import Shape from './../../components/Shape/Shape';
 import Techniq_cont from './../About/Techniq_cont';
+import Offer from './../Main/Offer/Offer';
 import BigOffer from './BigOffer/BigOffer';
 import { IQuestionData, QuestionData } from './Questions';
 import Questions from './Questions/Questions';
@@ -179,6 +181,18 @@ const ServiceSlider = () => {
           </div>
         </div>
         <BigOffer />
+        <div className={styles.img_parent}>
+          <div className={styles.img_div1}>
+            <Shape img="/img/background.png" />
+          </div>
+          <div className={styles.img_div2}>
+            {' '}
+            <Shape img="/img/background.png" degree={45} />
+          </div>
+          <div className={styles.img_div3}> </div>
+          <div className={styles.img_div4}> </div>
+        </div>
+        <Offer />
         {list.map((item) => {
           return (
             <Questions

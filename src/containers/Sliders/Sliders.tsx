@@ -1,4 +1,5 @@
 import { useCallback, useRef } from 'react';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 import { Pagination } from 'swiper';
 // eslint-disable-next-line import/no-unresolved
@@ -45,11 +46,11 @@ const Sliders = () => {
         })}
       </Swiper>
       <div className={styles.swiperbtn_container}>
-        <button onClick={handlePrev}>
-          <img className={styles.img} src={prev} alt="" />
+        <button className={styles.swiperbtn} onClick={handlePrev}>
+          <IoIosArrowBack className={styles.swiperbtn_icon} />
         </button>
         <button onClick={handleNext}>
-          <img className={styles.img} src={next} alt="" />
+          <IoIosArrowForward className={styles.swiperbtn_icon} />
         </button>
       </div>
     </div>
