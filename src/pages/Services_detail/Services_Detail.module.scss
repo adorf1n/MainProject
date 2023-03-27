@@ -1,0 +1,111 @@
+.decor_container {
+  max-width: 1430px;
+  margin: 0 auto;
+  margin-top: 122px;
+}
+
+.span {
+  text-decoration: none;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #828299;
+}
+
+.h6 {
+  &_cont {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+.h1 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 130%;
+  color: #192040;
+}
+
+.toptext_container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.h5 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #828299;
+}
+
+.block1 {
+  &_container {
+    margin-top: 133px;
+    display: flex;
+    margin-bottom: 120px;
+
+    gap: 130px;
+  }
+  &_text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &_span {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #192040;
+    text-decoration: none;
+  }
+}
+
+.points_container {
+  display: flex;
+  gap: 60px;
+}
+
+.h2 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  color: #192040;
+}
+
+.images_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.questions {
+  &_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(710px, 1fr));
+    max-width: 1430px;
+    gap: 10px;
+    padding-bottom: 120px;
+    border-bottom: 1px solid #d2d2d9;
+  }
+  &_h1 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    margin-top: 120px;
+    margin-bottom: 50px;
+  }
+}

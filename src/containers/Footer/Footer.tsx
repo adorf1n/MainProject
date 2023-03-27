@@ -64,10 +64,10 @@ const Footer = () => {
             <h2 className={styles.info_bigtext_font}>info@stenoprint.ru</h2>
           </div>
           <div className={styles.social_container}>
-            <a href="insta">
+            <a href="http://instagram.com">
               <img src={insta} alt="" />
             </a>
-            <a href="vk">
+            <a href="http://vk.com">
               <img src={vk} alt="" />
             </a>
           </div>
