@@ -3,8 +3,6 @@
   margin: 0 auto;
   position: relative;
 }
-.img:hover {
-}
 
 .swiperbtn_container {
   width: 95%;
@@ -24,7 +22,7 @@
 .swiperbtn_icon:hover {
   background: transparent;
 
-  filter: drop-shadow(0px 0 15px #02fffd);
+  filter: drop-shadow(0px 0px 10px #02c4ff);
   border-radius: 100px;
 }
 

@@ -14,7 +14,9 @@ const Questions = ({ children, title, collapse, click }: QuestionsProps) => {
       role="button"
       aria-hidden="true"
     >
-      <div className={styles.title}>{title}</div>
+      <div>
+        <div className={styles.title}>{title}</div> <img src="" alt="" />
+      </div>
       {collapse && <div className={styles.content}>{children}</div>}
     </div>
   );

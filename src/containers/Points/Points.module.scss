@@ -1,0 +1,43 @@
+.points {
+  &_numbering {
+    background: rgb(254, 255, 241);
+    background: linear-gradient(
+      0deg,
+      rgba(254, 255, 241, 1) 0%,
+      rgba(255, 255, 248, 1) 37%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    padding: 25px 28px 25px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    color: #192040;
+    max-width: 85px;
+    margin-bottom: 40px;
+  }
+
+  &_block {
+    max-width: 300px;
+  }
+  &_title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #192040;
+    margin-bottom: 10px;
+  }
+  &_text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #828299;
+  }
+}

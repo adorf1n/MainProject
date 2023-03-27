@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import { NavLink } from 'react-router-dom';
 
 import styles from './Navbar.module.scss';
@@ -35,8 +36,18 @@ const Navbar = () => {
             </div>
             <div className={styles.social_btn_container}>
               {/* контейнер под кнопки соц сетей */}
-              <button className={styles.social_btn_1}></button>
-              <button className={styles.social_btn_2}></button>
+              <a
+                target="_blank"
+                href="http://instagram.com"
+                className={styles.social_btn_1}
+                rel="noreferrer"
+              ></a>
+              <a
+                target="_blank"
+                href="http://vk.com"
+                rel="noreferrer"
+                className={styles.social_btn_2}
+              ></a>
             </div>
           </div>
         </div>
@@ -59,7 +70,7 @@ const Navbar = () => {
           <NavLink to={'/'} className={styles.navbar_font}>
             Портфолио
           </NavLink>
-          <NavLink to={'/sliders'} className={styles.navbar_font}>
+          <NavLink to={'/blog'} className={styles.navbar_font}>
             Блог
           </NavLink>
           <NavLink to={'/contacts'} className={styles.navbar_font}>
