@@ -1,12 +1,9 @@
-import { ISlideData } from './../../../containers/Sliders/slideData';
+import { IData } from '../../../containers/Sliders/slideData';
 import styles from './Slider.module.scss';
 
-const Slider = ({ title, text, image }: ISlideData) => {
+const Slider = ({ title, text, bgimg }: IData) => {
   return (
-    <div
-      className={styles.container}
-      style={{ backgroundImage: `url(${image})` }}
-    >
+    <div className={styles.container}>
       <div className={styles.text_container}>
         <h1 className={styles.text_bigfont}>{title}</h1>
 
