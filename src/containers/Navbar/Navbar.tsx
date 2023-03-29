@@ -1,11 +1,25 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
+import Catalog from '../Header/Catalog/Catalog';
 import styles from './Navbar.module.scss';
 import cross from './img/cross.svg';
 import input_icon from './img/input_icon.svg';
 
 const Navbar = () => {
+  const [displayCatalog, setDisplayCatalog] = useState<null | HTMLElement>(
+    null
+  );
+
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setDisplayCatalog(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setDisplayCatalog(null);
+  };
+
   return (
     <div className={styles.container}>
       <NavLink to={'/'} className={styles.logo}></NavLink> {/* логотип */}
@@ -53,14 +67,24 @@ const Navbar = () => {
         </div>
         <div className={styles.navbar_container}>
           {/* контейнер под навигацию и кнопки */}
-          <button
-            className={
-              styles.navbar_catalog_font + ' ' + styles.navbar_catalog_btn
-            }
-          >
-            <img src={cross} alt="" />
-            Каталог товаров
-          </button>
+          <div className={styles.catalog_container}>
+            <button
+              aria-controls="simple-menu"
+              aria-haspopup="true"
+              onClick={handleClick}
+              className={
+                styles.navbar_catalog_font + ' ' + styles.navbar_catalog_btn
+              }
+            >
+              <img src={cross} alt="" />
+              Каталог товаров
+            </button>
+            <Catalog
+              displayCatalog={displayCatalog}
+              keepMountedOpen={Boolean(displayCatalog)}
+              onClose={handleClose}
+            />
+          </div>
           <NavLink to={'/services'} className={styles.navbar_font}>
             <p>Наши услуги</p>
           </NavLink>
@@ -70,7 +94,7 @@ const Navbar = () => {
           <NavLink to={'/'} className={styles.navbar_font}>
             Портфолио
           </NavLink>
-          <NavLink to={'/blog'} className={styles.navbar_font}>
+          <NavLink to={'/'} className={styles.navbar_font}>
             Блог
           </NavLink>
           <NavLink to={'/contacts'} className={styles.navbar_font}>
