@@ -1,10 +1,8 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
   border: 2px solid #ededf2;
   border-radius: 30px;
   background-color: #fffefc;
+  margin-bottom: 10px;
 }
 
 .title {
@@ -14,9 +12,8 @@
   font-size: 16px;
   line-height: 140%;
   color: #192040;
-  padding-left: 21px;
+  padding-left: 30px;
   padding-top: 21px;
-  padding-bottom: 21px;
 }
 
 .content {
@@ -26,4 +23,7 @@
   font-size: 16px;
   line-height: 140%;
   color: #192040;
+  padding-left: 21px;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }

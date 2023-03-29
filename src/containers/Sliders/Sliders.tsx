@@ -11,8 +11,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Slider from './../../pages/Main/Slider/Slider';
 import styles from './Sliders.module.scss';
-import next from './img/next.svg';
-import prev from './img/prev.svg';
 import { slideData } from './slideData';
 
 const Sliders = () => {
@@ -46,7 +44,7 @@ const Sliders = () => {
         })}
       </Swiper>
       <div className={styles.swiperbtn_container}>
-        <button className={styles.swiperbtn} onClick={handlePrev}>
+        <button onClick={handlePrev}>
           <IoIosArrowBack className={styles.swiperbtn_icon} />
         </button>
         <button onClick={handleNext}>

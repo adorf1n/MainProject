@@ -7,7 +7,7 @@ import BlogPage from './pages/BlogPage';
 import ContactsPage from './pages/ContactsPage/ContactsPage';
 import Main from './pages/Main/Main';
 import ServicesPage from './pages/Services/ServicesPage';
-import ServicesMore from './pages/Services_detail/ServicesMore';
+import ServicesMore from './pages/Services_detail/Services_Detail';
 
 function App() {
   return (
