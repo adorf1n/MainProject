@@ -1,7 +1,15 @@
 import styles from './ServiceSlider.module.scss';
-import { ISlideDataa } from './ServiceSliderData';
+import { IData } from './slider';
 
-const ServiceSliderTemplate = ({ title, text, image }: ISlideDataa) => {
+const ServiceSliderTemplate = ({
+  text,
+  createdAt,
+  id,
+  title,
+  publishedAt,
+  updatedAt,
+  bgimg,
+}: IData) => {
   return (
     <div className={styles.container}>
       <div className={styles.text_container}>

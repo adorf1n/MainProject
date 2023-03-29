@@ -11,6 +11,7 @@ const Navbar = () => {
   const [showCatalog, setShowCatalog] = useState(false);
 
   const toggleCatalog = () => setShowCatalog(!showCatalog);
+
   return (
     <div className={styles.container}>
       <NavLink to={'/'} className={styles.logo}></NavLink> {/* логотип */}
@@ -79,7 +80,7 @@ const Navbar = () => {
           <NavLink to={'/'} className={styles.navbar_font}>
             Портфолио
           </NavLink>
-          <NavLink to={'/blog'} className={styles.navbar_font}>
+          <NavLink to={'/'} className={styles.navbar_font}>
             Блог
           </NavLink>
           <NavLink to={'/contacts'} className={styles.navbar_font}>
