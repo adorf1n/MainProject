@@ -1,3 +1,6 @@
+import { useState } from 'react';
+
+import { IOfferData } from '../../../types/offertype';
 import styles from './Offer.module.scss';
 import img from './img/1.png';
 

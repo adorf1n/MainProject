@@ -1,11 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
+import Catalog from '../Header/Catalog/Catalog';
 import styles from './Navbar.module.scss';
 import cross from './img/cross.svg';
 import input_icon from './img/input_icon.svg';
 
 const Navbar = () => {
+  const [showCatalog, setShowCatalog] = useState(false);
+
+  const toggleCatalog = () => setShowCatalog(!showCatalog);
   return (
     <div className={styles.container}>
       <NavLink to={'/'} className={styles.logo}></NavLink> {/* логотип */}
@@ -53,7 +58,9 @@ const Navbar = () => {
         </div>
         <div className={styles.navbar_container}>
           {/* контейнер под навигацию и кнопки */}
+
           <button
+            onClick={toggleCatalog}
             className={
               styles.navbar_catalog_font + ' ' + styles.navbar_catalog_btn
             }
@@ -61,6 +68,8 @@ const Navbar = () => {
             <img src={cross} alt="" />
             Каталог товаров
           </button>
+          {showCatalog && <Catalog />}
+
           <NavLink to={'/services'} className={styles.navbar_font}>
             <p>Наши услуги</p>
           </NavLink>
