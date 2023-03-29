@@ -59,7 +59,7 @@ const Navbar = () => {
           <NavLink to={'/'} className={styles.navbar_font}>
             Портфолио
           </NavLink>
-          <NavLink to={'/sliders'} className={styles.navbar_font}>
+          <NavLink to={'/blog'} className={styles.navbar_font}>
             Блог
           </NavLink>
           <NavLink to={'/contacts'} className={styles.navbar_font}>
