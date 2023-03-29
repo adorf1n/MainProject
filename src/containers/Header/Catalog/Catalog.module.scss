@@ -1,0 +1,42 @@
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 140px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.h3 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: #192040;
+  margin-bottom: 40px;
+}
+.btn_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #828299;
+}
+
+.child_container {
+  max-width: 1430px;
+  margin: 0 auto;
+  display: flex;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 140px;
+}

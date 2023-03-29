@@ -21,9 +21,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
-        <Route path="/blog" element={<Sliders />}>
-          <Route path=":id" element={<h3>ffsdfs</h3>} />
-        </Route>
         <Route path="/services/more" element={<ServicesMore />} />
       </Routes>
     </Layout>
