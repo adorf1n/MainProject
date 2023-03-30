@@ -1,7 +1,5 @@
-import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import { fetchSlider } from './API/request';
 import './App.css';
 import Layout from './components/Layout/Layout';
 import About from './pages/About/About';
@@ -10,9 +8,6 @@ import BlogDetailsPage from './pages/BlogPage/BlogDetails';
 import ContactsPage from './pages/ContactsPage/ContactsPage';
 import Main from './pages/Main/Main';
 import ServicesPage from './pages/Services/ServicesPage';
-import ServicesMore from './pages/Services_detail/Services_Detail';
-
-const data = fetchSlider().then((item) => item);
 
 function App() {
   return (
