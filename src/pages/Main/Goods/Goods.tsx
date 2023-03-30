@@ -15,12 +15,12 @@ const Goods = () => {
           <div className={styles.block_img + ' ' + styles.img_1}></div>
           <div className={styles.text_container}>
             <div>
-              <h6>Floraison</h6>
-              <p>Артикул: 11039</p>
+              <h5 className={styles.h5}>Floraison</h5>
+              <p className={styles.articulefont}>Артикул: 11039</p>
             </div>
             <div>
-              <h6>от 2 552 ₽ / м2</h6>
-              <p>от 3 452 ₽ / м2</p>
+              <h6 className={styles.h6}>от 2 552 ₽ / м2</h6>
+              <p className={styles.p}>от 3 452 ₽ / м2</p>
             </div>
           </div>
           <div className={styles.btn_dropdown_container}>
@@ -32,12 +32,12 @@ const Goods = () => {
           <div className={styles.block_img + ' ' + styles.img_2}></div>
           <div className={styles.text_container}>
             <div>
-              <h6>Floraison</h6>
-              <p>Артикул: 11039</p>
+              <h5 className={styles.h5}>Floraison</h5>
+              <p className={styles.articulefont}>Артикул: 11039</p>
             </div>
             <div>
-              <h6>от 2 552 ₽ / м2</h6>
-              <p>от 3 452 ₽ / м2</p>
+              <h6 className={styles.h6}>от 2 552 ₽ / м2</h6>
+              <p className={styles.p}>от 3 452 ₽ / м2</p>
             </div>
           </div>
           <div className={styles.btn_dropdown_container}>
@@ -49,12 +49,12 @@ const Goods = () => {
           <div className={styles.block_img + ' ' + styles.img_3}></div>
           <div className={styles.text_container}>
             <div>
-              <h6>Floraison</h6>
-              <p>Артикул: 11039</p>
+              <h5 className={styles.h5}>Floraison</h5>
+              <p className={styles.articulefont}>Артикул: 11039</p>
             </div>
             <div>
-              <h6>от 2 552 ₽ / м2</h6>
-              <p>от 3 452 ₽ / м2</p>
+              <h6 className={styles.h6}>от 2 552 ₽ / м2</h6>
+              <p className={styles.p}>от 3 452 ₽ / м2</p>
             </div>
           </div>
           <div className={styles.btn_dropdown_container}>
@@ -66,12 +66,12 @@ const Goods = () => {
           <div className={styles.block_img + ' ' + styles.img_4}></div>
           <div className={styles.text_container}>
             <div>
-              <h6>Floraison</h6>
-              <p>Артикул: 11039</p>
+              <h5 className={styles.h5}>Floraison</h5>
+              <p className={styles.articulefont}>Артикул: 11039</p>
             </div>
             <div>
-              <h6>от 2 552 ₽ / м2</h6>
-              <p>от 3 452 ₽ / м2</p>
+              <h6 className={styles.h6}>от 2 552 ₽ / м2</h6>
+              <p className={styles.p}>от 3 452 ₽ / м2</p>
             </div>
           </div>
           <div className={styles.btn_dropdown_container}>
