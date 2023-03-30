@@ -8,17 +8,9 @@ import cross from './img/cross.svg';
 import input_icon from './img/input_icon.svg';
 
 const Navbar = () => {
-  const [displayCatalog, setDisplayCatalog] = useState<null | HTMLElement>(
-    null
-  );
+  const [showCatalog, setShowCatalog] = useState(false);
 
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setDisplayCatalog(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setDisplayCatalog(null);
-  };
+  const toggleCatalog = () => setShowCatalog(!showCatalog);
 
   return (
     <div className={styles.container}>
@@ -67,24 +59,18 @@ const Navbar = () => {
         </div>
         <div className={styles.navbar_container}>
           {/* контейнер под навигацию и кнопки */}
-          <div className={styles.catalog_container}>
-            <button
-              aria-controls="simple-menu"
-              aria-haspopup="true"
-              onClick={handleClick}
-              className={
-                styles.navbar_catalog_font + ' ' + styles.navbar_catalog_btn
-              }
-            >
-              <img src={cross} alt="" />
-              Каталог товаров
-            </button>
-            <Catalog
-              displayCatalog={displayCatalog}
-              keepMountedOpen={Boolean(displayCatalog)}
-              onClose={handleClose}
-            />
-          </div>
+
+          <button
+            onClick={toggleCatalog}
+            className={
+              styles.navbar_catalog_font + ' ' + styles.navbar_catalog_btn
+            }
+          >
+            <img src={cross} alt="" />
+            Каталог товаров
+          </button>
+          {showCatalog && <Catalog />}
+
           <NavLink to={'/services'} className={styles.navbar_font}>
             <p>Наши услуги</p>
           </NavLink>
