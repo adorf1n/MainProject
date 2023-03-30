@@ -22,7 +22,6 @@ const Usage = () => {
           </div>
         </div>
         <div className={styles.div_2}>
-          {' '}
           <div className={styles.block_img + ' ' + styles.block_img_2}></div>
           <div className={styles.block_text}>
             <h6 className={styles.h6}>Офисы, рестораны, кафе</h6>
@@ -33,7 +32,6 @@ const Usage = () => {
           </div>
         </div>
         <div className={styles.div_3}>
-          {' '}
           <div className={styles.block_img + ' ' + styles.block_img_1}></div>
           <div className={styles.block_text}>
             <h6 className={styles.h6}>Жилые помещения</h6>
@@ -44,7 +42,6 @@ const Usage = () => {
           </div>
         </div>
         <div className={styles.div_4}>
-          {' '}
           <div className={styles.block_img + ' ' + styles.block_img_2}></div>
           <div className={styles.block_text}>
             <h6 className={styles.h6}>Офисы, рестораны, кафе</h6>

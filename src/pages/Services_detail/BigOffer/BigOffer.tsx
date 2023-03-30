@@ -1,7 +1,26 @@
+import { useState } from 'react';
+
 import inputfileicon from '../img/inputfileicon.svg';
 import styles from './BigOffer.module.scss';
 
 const BigOffer = () => {
+  const [bigOfferData, setBigOfferData] = useState({
+    ownDesign: false,
+    name: '',
+    phone: '',
+    file: '',
+  });
+
+  const [radioButton, setRadioButton] = useState();
+
+  const dataHandlerChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setBigOfferData((prev) => {
+      return {
+        ...prev,
+        [event.target.name]: event.target.value,
+      };
+    });
+  };
   return (
     <div className={styles.big_offer_container}>
       <div className={styles.title_container}>
@@ -17,12 +36,13 @@ const BigOffer = () => {
       <div className={styles.inputs_container}>
         <div className={styles.checkbox_container}>
           <h6 className={styles.checkbox_h6}>У вас есть свой дизайн?</h6>
-          <button className={styles.btn_approve}>
-            Да, отправить на проверку
-          </button>
-          <button className={styles.btn_reject}>
-            Нет, нужна помощь дизайнера
-          </button>
+          <div>
+            {' '}
+            <input type="radio" id="choicetrue" name="contact" value="email" />
+            <label htmlFor="choicetrue">Email</label>
+            <input type="radio" id="choicefalse" name="contact" value="phone" />
+            <label htmlFor="choicefalse">Phone</label>
+          </div>
         </div>
         <div className={styles.input_file_container}>
           <h6 className={styles.h6}>Загрузите ваш дизайн:</h6>
@@ -32,6 +52,7 @@ const BigOffer = () => {
               type="file"
               name=""
               id="input_file"
+              onChange={(e) => e.target.files[0]}
             />
             <span className={styles.input_file_icons}>
               <img
@@ -51,6 +72,7 @@ const BigOffer = () => {
             type="text"
             name=""
             placeholder="Иван"
+            onChange={dataHandlerChange}
           />
         </div>
         <div className={styles.input_phone_container}>
@@ -60,6 +82,7 @@ const BigOffer = () => {
             type="tel"
             name=""
             placeholder="+996"
+            onChange={dataHandlerChange}
           />
         </div>
         <button className={styles.fullapprove_btn}>Оформить заказ</button>

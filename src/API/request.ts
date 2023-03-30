@@ -10,3 +10,12 @@ export const fetchSlider = () =>
 export const postOffer = (data: { name: string; phone: string }) => {
   return address.post('offers', { json: data });
 };
+
+export const postBigOffer = (data: {
+  ownDesign: boolean;
+  name: string;
+  phone: string;
+  file: string;
+}) => {
+  return address.post('big-offers', { json: data });
+};
