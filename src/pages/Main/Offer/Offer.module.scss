@@ -105,7 +105,7 @@ span {
   &_container {
     margin-right: 30px;
     padding: 20px 55px 20px;
-    background: #fa052e;
+    background: #ff002b;
     box-shadow: 0px 15px 20px -15px #ff0d35;
     border-radius: 50px;
   }
@@ -116,6 +116,12 @@ span {
     font-size: 16px;
     line-height: 140%;
     color: #ffffff;
+  }
+}
+
+.btn_approval {
+  &_container:active {
+    background: #cf0124;
   }
 }
 

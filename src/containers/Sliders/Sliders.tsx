@@ -1,4 +1,4 @@
-import { useCallback, useRef } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 import { Pagination } from 'swiper';
@@ -11,7 +11,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Slider from './../../pages/Main/Slider/Slider';
 import styles from './Sliders.module.scss';
-import { slideData } from './slideData';
+import { fetchSlider } from './request';
+import { IData } from './slideData';
 
 const Sliders = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -27,6 +28,14 @@ const Sliders = () => {
     sliderRef.current.swiper.slideNext();
   }, []);
 
+  const [sliderData, setSliderData] = useState<IData[]>([]);
+
+  useEffect(() => {
+    fetchSlider().then((data) => {
+      data && setSliderData(data.data);
+    });
+  }, []);
+
   return (
     <div className={styles.swiper_container}>
       <Swiper
@@ -35,7 +44,7 @@ const Sliders = () => {
         modules={[Pagination]}
         className="mySwiper"
       >
-        {slideData.map((item) => {
+        {sliderData.map((item) => {
           return (
             <SwiperSlide key={item.id}>
               <Slider {...item} />
