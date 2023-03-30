@@ -1,0 +1,122 @@
+.parent_container {
+    margin: 0 auto;
+    max-width: 1430px;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+  }
+  .h6{
+    font-size: 17px;
+  }
+  .p{
+    font-size: 16px;
+  }
+  
+  .child_container_1 {
+    grid-area: 1 / 1 / 2 / 2;
+    padding-bottom: 70px;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    background-color: #fcfcf9;
+  }
+  .child_container_2 {
+    grid-area: 1 / 2 / 2 / 3;
+    padding-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    background-color: #fcfcf9;
+  }
+  .child_container_3 {
+    grid-area: 1 / 3 / 2 / 4;
+    padding-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    background-color: #fcfcf9;
+  }
+  
+  .block {
+    &_img {
+      &_1 {
+        width: 29.375rem;
+        height: 15.625rem;
+        background-image: url('../Blog/img/block1.png');
+      }
+      &_2 {
+        width: 29.375rem;
+        height: 15.625rem;
+        background-image: url('./img/block2.png');
+      }
+      &_3 {
+        width: 29.375rem;
+        height: 15.625rem;
+        background-image: url('./img/block3.png');
+      }
+    }
+  }
+  x .h6 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #192040;
+  }
+  
+  .p {
+    margin-top: 10px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #828299;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .text {
+    &_container {
+      padding-top: 30px;
+      padding-left: 40px;
+      padding-right: 40px;
+      max-width: 390px;
+      height: 80px;
+    }
+  }
+  .btn_img{
+  height: 2.25rem;
+  left: 2.5rem;
+  top: 11.8125rem;
+  border-radius: 3.125rem;
+  padding: 8px 16px 8px 16px;
+  background: #FF2E51;
+  color: white;
+  position: relative;
+  left: 30px;
+  bottom: -5px;
+  }
+  .icon{
+    display: flex;
+    gap: 10px;
+  }
+  .views{
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+  }
+  .info_views{
+    display: flex;
+    color: gray;
+    justify-content: space-between;
+  }
+.slaider_btn{
+  display: flex;
+  align-items: center;
+}
+.flexcard{
+  display: flex;
+}

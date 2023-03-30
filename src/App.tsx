@@ -1,17 +1,13 @@
-import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import { fetchSlider } from './API/request';
 import './App.css';
 import Layout from './components/Layout/Layout';
-import Sliders from './containers/Sliders/Sliders';
 import About from './pages/About/About';
+import BlogPage from './pages/BlogPage';
+import BlogDetailsPage from './pages/BlogPage/BlogDetails';
 import ContactsPage from './pages/ContactsPage/ContactsPage';
 import Main from './pages/Main/Main';
 import ServicesPage from './pages/Services/ServicesPage';
-import ServicesMore from './pages/Services_detail/Services_Detail';
-
-const data = fetchSlider().then((item) => item);
 
 function App() {
   return (
@@ -21,7 +17,10 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
-        <Route path="/services/more" element={<ServicesMore />} />
+        <Route path="/blog">
+          <Route index element={<BlogPage />} />
+          <Route path=":id" element={<BlogDetailsPage />} />
+        </Route>
       </Routes>
     </Layout>
   );
