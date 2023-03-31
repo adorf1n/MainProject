@@ -6,6 +6,7 @@ import './App.css';
 import Layout from './components/Layout/Layout';
 import Sliders from './containers/Sliders/Sliders';
 import About from './pages/About/About';
+import CatalogPage from './pages/CatalogPage/CatalogPage';
 import ContactsPage from './pages/ContactsPage/ContactsPage';
 import Main from './pages/Main/Main';
 import ServicesPage from './pages/Services/ServicesPage';
@@ -22,6 +23,7 @@ function App() {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
         <Route path="/services/more" element={<ServicesMore />} />
+        <Route path="/catalog" element={<CatalogPage />} />
       </Routes>
     </Layout>
   );

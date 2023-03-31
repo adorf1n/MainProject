@@ -51,6 +51,31 @@
     line-height: 140%;
     color: #192040;
   }
+  &_buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  &_input {
+    visibility: hidden;
+    position: absolute;
+  }
+  &_label {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #828299;
+    padding: 15px 30px 15px 30px;
+    background: #fffefc;
+    border: 2px solid #ededf2;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    &_active {
+      color: white;
+      background-color: #ff2e51;
+    }
+  }
 }
 
 .inputs {

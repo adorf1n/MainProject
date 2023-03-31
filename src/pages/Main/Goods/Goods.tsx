@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import styles from './Goods.module.scss';
 
 const Goods = () => {
@@ -81,7 +83,9 @@ const Goods = () => {
         </div>
       </div>
       <div className={styles.btn_watchAll_container}>
-        <button className={styles.btn_watchAll}>Смотреть все товары</button>
+        <NavLink to="/catalog" className={styles.btn_watchAll}>
+          Смотреть все товары
+        </NavLink>
       </div>
     </div>
   );
