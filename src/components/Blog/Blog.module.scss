@@ -1,3 +1,31 @@
+.toptext_smtext {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
+}
+.h6 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #828299;
+}
+.h1 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 130%;
+  color: #192040; 
+}
+.idt{
+       max-width: 1380px; 
+      margin: 0 auto;
+    }
+
+
 .parent_container {
   margin: 0 auto;
   max-width: 1430px;
@@ -168,4 +196,32 @@
   font-size: 40px;
   line-height: 130%;
   color: #192040;
+}
+.inputs{
+  display: flex;
+  gap: 10px;
+}
+.search{
+  display: flex;
+  height: 52px;
+  width: 470px;
+  left: 245px;
+  top: 413px;
+  border-radius: 50px;
+  padding: 19px 30px 15px 30px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.select{
+  height: 50px;
+  width: 350px;
+  left: 725px;
+  top: 413px;
+  border-radius: 26px;
+  color: #828299;
+  padding-left: 20px;
+}
+.inp{
+  color: #828299;
+  text-align: center;
 }
