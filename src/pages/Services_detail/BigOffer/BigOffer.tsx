@@ -1,26 +1,54 @@
 import { useState } from 'react';
 
+import cn from 'clsx';
+
+import { postBigOffer } from '../../../API/request';
 import inputfileicon from '../img/inputfileicon.svg';
 import styles from './BigOffer.module.scss';
 
 const BigOffer = () => {
-  const [bigOfferData, setBigOfferData] = useState({
-    ownDesign: false,
+  const [bigOfferData, setBigOfferData] = useState<{
+    OwnDesign: boolean;
+    name: string;
+    phone: string;
+    file: File | null;
+  }>({
+    OwnDesign: false,
     name: '',
     phone: '',
-    file: '',
+    file: null,
   });
 
-  const [radioButton, setRadioButton] = useState();
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setBigOfferData((prev) => {
+      return {
+        ...prev,
+        file: e.target.files ? e.target.files[0] : null,
+      };
+    });
+  };
 
   const dataHandlerChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setBigOfferData((prev) => {
       return {
         ...prev,
-        [event.target.name]: event.target.value,
+        [event.target.name]:
+          event.target.name === 'ownDesign'
+            ? Boolean(parseInt(event.target.value))
+            : event.target.value,
       };
     });
   };
+
+  const submitHandler = () => {
+    const formData = new FormData();
+    Object.keys(bigOfferData).forEach((key) => {
+      formData.append(key, bigOfferData[key]);
+    });
+
+    postBigOffer(FormData);
+  };
+
   return (
     <div className={styles.big_offer_container}>
       <div className={styles.title_container}>
@@ -36,12 +64,41 @@ const BigOffer = () => {
       <div className={styles.inputs_container}>
         <div className={styles.checkbox_container}>
           <h6 className={styles.checkbox_h6}>У вас есть свой дизайн?</h6>
-          <div>
-            {' '}
-            <input type="radio" id="choicetrue" name="contact" value="email" />
-            <label htmlFor="choicetrue">Email</label>
-            <input type="radio" id="choicefalse" name="contact" value="phone" />
-            <label htmlFor="choicefalse">Phone</label>
+          <div className={styles.checkbox_buttons}>
+            <label
+              className={cn(
+                styles.checkbox_label,
+                bigOfferData.ownDesign && styles.checkbox_label_active
+              )}
+              htmlFor="choicetrue"
+            >
+              <input
+                type="radio"
+                id="choicetrue"
+                name="ownDesign"
+                value={1}
+                className={styles.checkbox_input}
+                onChange={dataHandlerChange}
+              />
+              Да, отправить на проверку
+            </label>
+            <label
+              className={cn(
+                styles.checkbox_label,
+                !bigOfferData.ownDesign && styles.checkbox_label_active
+              )}
+              htmlFor="choicefalse"
+            >
+              <input
+                type="radio"
+                id="choicefalse"
+                name="ownDesign"
+                value={0}
+                className={styles.checkbox_input}
+                onChange={dataHandlerChange}
+              />
+              Нет, нужна помощь дизайнера
+            </label>
           </div>
         </div>
         <div className={styles.input_file_container}>
@@ -52,7 +109,7 @@ const BigOffer = () => {
               type="file"
               name=""
               id="input_file"
-              onChange={(e) => e.target.files[0]}
+              onChange={handleFileChange}
             />
             <span className={styles.input_file_icons}>
               <img
@@ -85,7 +142,9 @@ const BigOffer = () => {
             onChange={dataHandlerChange}
           />
         </div>
-        <button className={styles.fullapprove_btn}>Оформить заказ</button>
+        <button className={styles.fullapprove_btn} onClick={submitHandler}>
+          Оформить заказ
+        </button>
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ import styles from './Services_Detail.module.scss';
 import block1 from './img/1block.png';
 import house from './img/house.svg';
 
-const Services_Detail = () => {
+const ServicesDetail = () => {
   const [list, setList] = useState<IQuestionData[] | []>([]);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
 
@@ -138,4 +138,4 @@ const Services_Detail = () => {
   );
 };
 
-export default Services_Detail;
+export default ServicesDetail;
