@@ -1,8 +1,12 @@
 .toptext_smtext {
-  display: flex;
+    display: flex;
+    align-items: center;
   flex-direction: row;
   gap: 10px;
   margin-top: 20px;
+}
+.li{
+  list-style: none;
 }
 .h6 {
   font-family: 'Gilroy';
@@ -224,4 +228,7 @@
 .inp{
   color: #828299;
   text-align: center;
+}
+span{
+      text-decoration: none;
 }

@@ -1,3 +1,5 @@
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
 import Card from '../Card/Card';
 import styles from './Blog.module.scss';
 
@@ -6,7 +8,8 @@ const Blog = () => {
     <>
       <div className={styles.idt}>
         <div className={styles.toptext_smtext}>
-          <span>
+          <Breadcrumb.Item href="http://localhost:5173/" className={styles.li}>
+            {' '}
             <svg
               width="14"
               height="12"
@@ -19,8 +22,11 @@ const Blog = () => {
                 fill="#828299"
               />
             </svg>
-          </span>
-          <h6 className={styles.h6}>/ Блог</h6>
+          </Breadcrumb.Item>
+          <span>/</span>
+          <Breadcrumb.Item active className={styles.li}>
+            Блог
+          </Breadcrumb.Item>
         </div>
         <h1 className={styles.h1}>Блог</h1>
         <div className={styles.inputs}>

@@ -1,7 +1,11 @@
 .container {
   margin-top: 50px;
 }
-.cards{display: flex;}
+.cards{
+  display: flex;
+  margin-left: 220px;
+  gap: 20px;
+  }
 .blogh1{
       max-width: 1410px;
     margin: 0 auto;
