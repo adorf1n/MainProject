@@ -1,0 +1,24 @@
+.container {
+  width: 350px;
+  background-color: #fffefc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  border-radius: 30px;
+  border: 2px solid #ededf2;
+}
+
+.children {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #828299;
+}

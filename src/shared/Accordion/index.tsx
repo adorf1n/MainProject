@@ -1,4 +1,6 @@
-import React from 'react';
+import { useState } from 'react';
+
+import styles from './Accordion.module.scss';
 
 type AccordionProps = {
   title: string;
@@ -6,11 +8,13 @@ type AccordionProps = {
 };
 
 export const Accordion = ({ title, children }: AccordionProps) => {
-  const [collapse, setCollapse] = React.useState(true);
+  const [collapse, setCollapse] = useState(true);
 
   return (
-    <div>
-      <div onClick={() => setCollapse(!collapse)}>{title}</div>
+    <div className={styles.container}>
+      <div className={styles.title} onClick={() => setCollapse(!collapse)}>
+        {title}
+      </div>
       {!collapse && <div>{children}</div>}
     </div>
   );
