@@ -7,6 +7,7 @@ import CatalogFilter from './CatalogFilter/CatalogFilter';
 import {
   filterCollectionData,
   filterColorsData,
+  filterMaterialData,
 } from './CatalogFilter/filterdata';
 import styles from './CatalogPage.module.scss';
 import GoodCard from './GoodCard/GoodCard';
@@ -67,23 +68,34 @@ const CatalogPage = () => {
         count_brandedwallpapers={11}
       />
       <div className={styles.goodsFilter_container}>
-        <Accordion title="Коллекция">
-          <CatalogFilter
-            onChange={changeHandler}
-            type="collection"
-            data={filterCollectionData}
-          />
-        </Accordion>
-        <Accordion title="Цвета">
-          <CatalogFilter
-            onChange={changeHandler}
-            type="colors"
-            data={filterColorsData}
-          />
-        </Accordion>
-        {goods.map((goods) => {
-          return <GoodCard key={goods.id} {...goods} id={goods.id} />;
-        })}
+        <div className={styles.filter_container}>
+          <Accordion title="Коллекция">
+            <CatalogFilter
+              onChange={changeHandler}
+              type="collection"
+              data={filterCollectionData}
+            />
+          </Accordion>
+          <Accordion title="Цвета">
+            <CatalogFilter
+              onChange={changeHandler}
+              type="colors"
+              data={filterColorsData}
+            />
+          </Accordion>
+          <Accordion title="Материал">
+            <CatalogFilter
+              onChange={changeHandler}
+              type="materials"
+              data={filterMaterialData}
+            />
+          </Accordion>
+        </div>
+        <div className={styles.goods_container}>
+          {goods.map((goods) => {
+            return <GoodCard key={goods.id} {...goods} id={goods.id} />;
+          })}
+        </div>
       </div>
     </div>
   );
