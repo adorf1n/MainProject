@@ -1,8 +1,21 @@
 .container {
   margin-top: 50px;
 }
-.cards{display: flex;}
-.blogh1{
-      max-width: 1410px;
-    margin: 0 auto;
+
+.ttitle {
+  max-width: 1430px;
+  margin: 0 auto;
+  margin-top: 65px;
+}
+.cards {
+  display: flex;
+  max-width: 1430px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  margin-top: 65px;
+  border-bottom: 1px solid rgb(206, 204, 204);
+}
+.blogh1 {
+  max-width: 1410px;
+  margin: 0 auto;
 }
