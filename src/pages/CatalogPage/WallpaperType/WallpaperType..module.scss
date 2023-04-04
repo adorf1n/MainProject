@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.btn_container {
+  flex-grow: 1;
+  background-color: #fffefc;
+  padding: 30px 50px 30px 30px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  display: flex;
+
+  flex-direction: row;
+  gap: 30px;
+  h6 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #192040;
+    p {
+      margin-top: 21px;
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      color: #ffffff;
+      padding: 8px 16px 8px 16px;
+      background: #ff2e51;
+      border-radius: 50px;
+      max-width: 130px;
+    }
+  }
+}
+
+.btn_container_active {
+  background-color: #ff2e51;
+  h6 {
+    color: #ffffff;
+    p {
+      color: #192040;
+      background: #fffefc;
+    }
+  }
+}

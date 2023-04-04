@@ -17,7 +17,7 @@ const Main = () => {
       <Goods />
       <Usage />
       <Offer />
-      <h1 className={styles.blogh1}>Блог</h1>
+      <h1 className={styles.ttitle}>Блог</h1>
       <div className={styles.cards}>
         <Card
           title="Антигравийная пленка"
